@@ -22,7 +22,7 @@ details[open] > summary.hide-on-open {
   display: none;
 }
 </style>
-<script>document.addEventListener('load', ()=>{
+<script>window.addEventListener('load', ()=>{
   const urlParams = new URLSearchParams(window.location.search);
   document.querySelectorAll('a.to-dl').forEach(elem=>elem.href=urlParams.get('dl-key'));
 });</script>
