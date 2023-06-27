@@ -29,9 +29,6 @@ a:any-link {
 a:any-link:hover {
   text-decoration: underline;
 }
-.bg:not(:hover) {
-  filter: blur(5px) saturate(0);
-}
 </style>
 <script>window.addEventListener('load', ()=>{
   const urlParams = new URLSearchParams(window.location.search);
@@ -39,7 +36,6 @@ a:any-link:hover {
     document.querySelectorAll('a.to-dl').forEach(elem=>elem.href=urlParams.get('dl-key'));
   }
 });</script>
-<div class="bg" style="width:100vw;height:100vh;position:fixed;left:0;top:0;z-index:-1;background: url('/allegro/bg_screenshot.png');transition: filter 0.5s;"></div>
 <h1>Chapter One Studios</h1>
 <div style="background: white; display: inline-block;">
   <div style="border-radius: 5px;padding: 1em;display: inline-block;box-shadow: 0px 0px 3px 3px rgba(0,0,0,0.5);background: url('/allegro/res/BG.png');" id="allegro-card">
