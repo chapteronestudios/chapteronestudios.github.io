@@ -33,6 +33,9 @@ body {
   margin: 0;
   padding: 0;
 }
+details[open] .top-padding-on-open {
+  top-bottom: 1rem;
+}
 </style>
 <script>window.addEventListener('load', ()=>{
   const urlParams = new URLSearchParams(window.location.search);
@@ -50,7 +53,7 @@ body {
       <details>
         <summary style="list-style:none;cursor:pointer;">
           <div style="display: flex; flex-flow: row nowrap; justify-content: center; align-items: center; align-content: center;">
-            <img src="/allegro/res/screenshots/CoverGIF3.gif" alt="Allegro" title="Allegro" style="image-rendering: pixelated;image-rendering: -moz-crisp-edges;image-rendering: crisp-edges;border-radius: 5px;max-width: 384px;display:block;"></img>
+            <img class="top-padding-on-open" src="/allegro/res/screenshots/CoverGIF3.gif" alt="Allegro" title="Allegro" style="image-rendering: pixelated;image-rendering: -moz-crisp-edges;image-rendering: crisp-edges;border-radius: 5px;max-width: 384px;display:block;"></img>
           </div>
         </summary>
         <div></div>
