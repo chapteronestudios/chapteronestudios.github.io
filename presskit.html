@@ -29,6 +29,9 @@ a:any-link {
 a:any-link:hover {
   text-decoration: underline;
 }
+nav > * {
+  color: white;
+}
 </style>
 <script>window.addEventListener('load', ()=>{
   const urlParams = new URLSearchParams(window.location.search);
@@ -36,7 +39,7 @@ a:any-link:hover {
     document.querySelectorAll('a.to-dl').forEach(elem=>elem.href=urlParams.get('dl-key'));
   }
 });</script>
-<nav style="display: flex; flex-flow: row nowrap; justify-content: flex-end; align-items: center; align-content: center; font-size: 2rem;">
+<nav style="display: flex; flex-flow: row nowrap; justify-content: flex-end; align-items: center; align-content: center; font-size: 2rem; background: #404040">
   <span style="margin-right: auto;"><img src="icon.png" style="height: 1em;"> Chapter One Studios</span>
   <a href="#">Presskit</a>
 </nav>
