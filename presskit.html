@@ -35,11 +35,9 @@ a:any-link:hover {
   top: 0;
   width: 100vw;
   height: 100vh;
-  filter: blur(10px);
   z-index: -1;
 }
-.background-frame:focus-within {
-  filter: none;
+.background-frame:focus-within, .background-frame:hover {
   z-index: 1;
 }
 </style>
