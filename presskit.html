@@ -7,44 +7,24 @@
   font-weight: 300;
   src: local("-apple-system"), local("BlinkMacSystemFont"), local("segoe ui"), local("avenir next"), local("avenir"), local("helvetica neue"), local("helvetica"), local("Cantarell"), local("Ubuntu"), local("roboto"), local("noto"), local("arial"), local("sans-serif");
 }
-:root {
-  font-family: system;
-}
-#allegro-card * {
-  text-align: center;
-}
-td {
-  padding: 0.25em;
-}
-th {
-  padding: 0.25em 0.5em;
-}
-details[open] > summary.hide-on-open {
-  display: none;
-}
+:root {font-family: system;}
+#allegro-card * {text-align: center;}
+td {padding: 0.25em;}
+th {padding: 0.25em 0.5em;}
+details[open] > summary.hide-on-open {display: none;}
 a:any-link {
   color: RoyalBlue;
   text-decoration: none;
 }
-a:any-link:hover {
-  text-decoration: underline;
-}
-.hover-underline:hover {
-  text-decoration: underline;
-}
+a:any-link:hover {text-decoration: underline;}
+.hover-underline:hover {text-decoration: underline;}
 body {
   margin: 0;
   padding: 0;
 }
-details[open] .top-padding-on-open {
-  padding-top: 1rem;
-}
-.flex-block-on-expand {
-  display: inline-flex;
-}
-.flex-block-on-expand:has(details[open]) {
-  display: flex;
-}
+details[open] .top-padding-on-open {padding-top: 1rem;}
+.flex-block-on-expand {display: inline-flex;}
+.flex-block-on-expand:has(details[open]) {display: flex;}
 /*
 html {transition: color 300ms, background-color 300ms;}
 @media (prefers-color-scheme: dark) {html, img {filter: invert(1) hue-rotate(180deg);}}
@@ -94,7 +74,7 @@ html {transition: color 300ms, background-color 300ms;}
         <div class="flex-block-on-expand" style="flex-flow: row wrap; justify-content: center; align-items: center; align-content: center;">
           <details style="border-radius: 5px;padding: 1em;box-shadow: 0px 0px 3px 3px rgba(0,0,0,0.5);backdrop-filter: blur(7px);margin:1rem;">
             <summary style="cursor:pointer;"><h3 class="hover-underline" style="display: inline-block;margin:0;">Overview</h3></summary>
-            <p>
+            <p style="white-space: pre-line;">
               Allegro brings a refreshing new twist to the game scene: a delightful burst of energy, with intriguing pathways and high-level challenges.
               It is a unique, hand-crafted, precision platformer, with both retro and modern elements, designed as games used to be long ago - minimalist, engaging, challenging and fun!
               Its creative puzzles are somewhat obscured by its minimalist artwork and dynamic physics.
