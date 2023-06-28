@@ -36,6 +36,8 @@ body {
 details[open] .top-padding-on-open {
   padding-top: 1rem;
 }
+html {transition: color 300ms, background-color 300ms;}
+@media (prefers-color-scheme: dark) {html, img {filter: invert(1) hue-rotate(180deg);}}
 </style>
 <script>window.addEventListener('load', ()=>{
   const urlParams = new URLSearchParams(window.location.search);
