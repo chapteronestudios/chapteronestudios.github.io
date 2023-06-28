@@ -29,6 +29,9 @@ a:any-link {
 a:any-link:hover {
   text-decoration: underline;
 }
+.hover-underline:hover {
+  text-decoration: underline;
+}
 body {
   margin: 0;
   padding: 0;
@@ -70,16 +73,18 @@ html {transition: color 300ms, background-color 300ms;}
             </table>
           </div>
         </div>
-        <details style="border-radius: 5px;padding: 1em;box-shadow: 0px 0px 3px 3px rgba(0,0,0,0.5);backdrop-filter: blur(7px);margin:1rem;">
-          <summary><h3>Factsheet</h3></summary>
-          <ul style="list-style: none; padding: 0;">
-            <li>Game name: Allegro</li>
-            <li>Developer/Publisher: Chapter One Studios</li>
-            <li>Genre: Precision Platformer</li>
-            <li>Platforms: Windows, Linux, macOS, HTML5, Android, iOS</li>
-            <li>Controls: Simple and accessible - either arrows, WASD, touchscreen, or a controller</li>
-          </ul>
-        </details>
+        <div style="display: flex; flex-flow: row wrap; justify-content: center; align-items: center; align-content: center;">
+          <details style="border-radius: 5px;padding: 1em;box-shadow: 0px 0px 3px 3px rgba(0,0,0,0.5);backdrop-filter: blur(7px);margin:1rem;">
+            <summary style="list-style:none;cursor:pointer;"><h3 class="hover-underline">Factsheet</h3></summary>
+            <ul style="list-style: none; padding: 0;">
+              <li>Game name: Allegro</li>
+              <li>Developer/Publisher: Chapter One Studios</li>
+              <li>Genre: Precision Platformer</li>
+              <li>Platforms: Windows, Linux, macOS, HTML5, Android, iOS</li>
+              <li>Controls: Simple and accessible - either arrows, WASD, touchscreen, or a controller</li>
+            </ul>
+          </details>
+        </div>
       </details>
     </div>
   </div>
